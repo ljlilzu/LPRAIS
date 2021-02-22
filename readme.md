@@ -1,10 +1,10 @@
-# LP~RAIS~ -- Link Prediction in Multiplex Networks using a Novel Multiple-Attribute Decision-Making Approach
+# LP<sub>RAIS</sub> -- Link Prediction in Multiplex Networks using a Novel Multiple-Attribute Decision-Making Approach
 
 The code and data for the paper "Link Prediction in Multiplex Networks using a Novel Multiple-Attribute Decision-Making Approach" resubmitted to *Knowledge-based systems*. The code is implemented in Python 3.6.
 
 
 
-The code in version 1 indicates the first version of LP~RAIS~, in which the layer similarity measure is used, and that in version 2 denotes the modified LP~RAIS~, in which the layer similarity measure is not used.
+The code in version 1 indicates the first version of LP<sub>RAIS</sub>, in which the layer similarity measure is used, and that in version 2 denotes the modified LP<sub>RAIS</sub>, in which the layer similarity measure is not used.
 
 
 
@@ -20,4 +20,3 @@ The TF network is original available from https://www.ncbi.nlm.nih.gov/pmc/artic
 and all other networks are original downloaded from https://manliodedomenico.com/data.php.  
 
 If you use these networks, please cite the original references.
-
