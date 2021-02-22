@@ -57,7 +57,7 @@ sim_methods = [                                           # The basic similarity
 
 method_ids = [0,1,2,3]                                    # Select the basic similarity indexes.           
 sim_method_list = [sim_methods[i] for i in method_ids]
-sigma = 'HALFRANGE'                                      # 'HALFRANGE', 'MEDIAN', 'MIDRANGE', 'SD', 'MEAN'
+sigma = 'HALFRANGE'                                      # In the experiment of Section 4.2, sigma can be set to HALFRANGE, MIDRANGE, SD, MEAN or MEDIAN.
 
 for i in range(len(graph_file_list)):
     graph_file = graph_file_list[i]
@@ -66,8 +66,8 @@ for i in range(len(graph_file_list)):
     for alpha in range(1,layerNum(graph_file)+1):
         out_file = open(result_file+'_lprais_'+str(alpha), 'w')  # Opening the result file.
         out_file.write( 'Relevance\tMethod\tAUC\tRanking_Score\ttime (us)\tPrecision (10)\n')           
-        Rel = ['CSL','PCC','AASN']
-        Phi = [ 0.5]
+        Rel = ['CSL','PCC','AASN']                     # layer similarity measures
+        Phi = [ 0.5]                                   # 0： only target layer is considered；1：only auxiliary layers are considered；0.5：both target layer and auxiliary layers are considered.
         for method in sim_method_list:
             for rele in Rel:
                 for phi in Phi:
